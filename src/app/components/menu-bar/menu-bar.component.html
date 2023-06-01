@@ -1,1 +1,30 @@
-<p>menu-bar works!</p>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<div class="menu">
+    <div class="logo-container">
+        <button>AB</button>
+    </div>
+    <div class="menu-buttons">
+        <ul>
+            <li *ngFor="let menuButton of menuButtons">
+                <button
+                    class="menu-button" 
+                    [routerLink]="[menuButton.route]"
+                    [routerLinkActive]="['button-active']"
+                    [routerLinkActiveOptions]="{exact:menuButton.route === '/'}"
+                >
+                    <span class="material-symbols-outlined">
+                        {{menuButton.iconName}}
+                    </span>
+                </button>
+            </li>
+        </ul>
+    </div>
+    <div class="account">
+        <button class="menu-button">
+            <span class="material-symbols-outlined">
+                person
+            </span>
+        </button>
+    </div>
+</div>
