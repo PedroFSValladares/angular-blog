@@ -49,5 +49,6 @@ ul > li{
     align-items: center;
     padding: 1rem;
     position: sticky;
+    top: 0;
     background-color: #606CD5;
 }

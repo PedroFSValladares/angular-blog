@@ -1,0 +1,15 @@
+.news-container{
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+}
+@media(min-width: 500px){
+    .news-container{
+        grid-template-columns: repeat(2, auto);
+    }
+}
+@media(min-width: 800px){
+    .news-container{
+        grid-template-columns: repeat(3, auto);
+    }
+}

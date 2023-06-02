@@ -1,28 +1,24 @@
 {
-    "news": [
+    "title": "WinRAR responde com meme ao Windows 11 com suporte nativo para RAR",
+    "font": "Canaltech",
+    "description": "",
+    "publishDate": "2023-05-31T15:21",
+    "peopleSaw": 0,
+    "topic": "technology",
+    "imageUrl": "https://t.ctcdn.com.br/4NPBEatwHSCrhrYuUWuxRMtGcs0=/1200x675/smart/filters:format(webp)/i507492.png",
+    "url": "https://canaltech.com.br/apps/winrar-responde-com-meme-ao-windows-11-com-suporte-nativo-para-rar-251364/",
+    "text": [
         {
-            "title": "WinRAR responde com meme ao Windows 11 com suporte nativo para RAR",
-            "font": "Canaltech",
-            "description": "",
-            "publishDate": "2023-05-31T15:21",
-            "peopleSaw": 0,
-            "topic": "tecnology",
-            "imageUrl": "https://t.ctcdn.com.br/4NPBEatwHSCrhrYuUWuxRMtGcs0=/1200x675/smart/filters:format(webp)/i507492.png",
-            "url": "https://canaltech.com.br/apps/winrar-responde-com-meme-ao-windows-11-com-suporte-nativo-para-rar-251364/",
-            "text": [
-                {
-                    "subTitle": "",
-                    "text" :"O WinRAR criou uma publicação no Twitter que viralizou graças ao tom de humor e tristeza. O aplicativo de compressão de arquivos usou o meme “it’s fine” — aquele do cachorro na casa pegando fogo — para representar o atual sentimento sobre uma ferramenta do Windows 11.\nA brincadeira é uma referência a pessoas que sempre enxergam o lado bom das coisas, mesmo quando tudo parece conspirar contra. No caso do WinRAR, a \"ameaça\" pode trazer consequências para o futuro do app.\nO sistema operacional da Microsoft terá suporte nativo ao formato RAR, conforme anunciado durante a Microsoft Build 2023. Em razão disso, existe a real possibilidade de o WinRAR finalmente ser aposentado após quase três décadas de vida."
-                },
-                {
-                    "subTitle": "Como funcionará o RAR no Windows 11?",
-                    "text": "Não está claro como funcionará o recurso integrado, mas é provável que siga o modelo já adotado pelo ZIP há alguns anos. Versões voltadas para o mercado corporativo até expandem os formatos suportados, mas nenhuma oferecia suporte ao RAR, por se tratar de um formato proprietário.\nA ferramenta do Windows para compactação de arquivos é bem básica: você seleciona os arquivos e ela comprime para ocupar menos espaço no HD. Não há recursos de proteger com senhas, separar em vários arquivos ou reparar conteúdos danificados.\nEntão, talvez o WinRAR ainda consiga sobreviver se fortalecer os extras ausentes do Windows. Embora seja um software pago, ele permite que o usuário estenda eternamente a licença de 40 dias, o que obviamente desestimula a compra. Recentemente, o influenciador Felipe Neto comprou uma licença do programa para dar exemplo e mostrar como funciona a versão paga."
-                },
-                {
-                    "subTitle": "O WinRAR vai morrer?",
-                    "text": "O WinRAR tem mais de meio bilhão de usuários no mundo inteiro, sendo considerada a ferramenta de compactação mais popular do mundo. Sua funcionalidade vai além do formato proprietário para “deszipar” também outros mais antigos, como GZ, ARJ e até ISO.\nVale lembrar que o WinRAR causou uma grande revolução quando chegou ao mercado graças ao seu alto poder de compactação de arquivos e criptografia de senha. Nem mesmo a rivalidade com o formato de código aberto 7Z (7-ZIP) foi páreo para o amado formato.\nO suporte nativo para RAR deve chegar ao Windows 11 em algum momento do segundo semestre, mas ainda não há uma data definida. Antes, os testadores cadastrados no programa Windows Insider devem receber uma prévia."
-                }
-            ]
+            "subTitle": "",
+            "text" :"O WinRAR criou uma publicação no Twitter que viralizou graças ao tom de humor e tristeza. O aplicativo de compressão de arquivos usou o meme “it’s fine” — aquele do cachorro na casa pegando fogo — para representar o atual sentimento sobre uma ferramenta do Windows 11.\nA brincadeira é uma referência a pessoas que sempre enxergam o lado bom das coisas, mesmo quando tudo parece conspirar contra. No caso do WinRAR, a \"ameaça\" pode trazer consequências para o futuro do app.\nO sistema operacional da Microsoft terá suporte nativo ao formato RAR, conforme anunciado durante a Microsoft Build 2023. Em razão disso, existe a real possibilidade de o WinRAR finalmente ser aposentado após quase três décadas de vida."
+        },
+        {
+            "subTitle": "Como funcionará o RAR no Windows 11?",
+            "text": "Não está claro como funcionará o recurso integrado, mas é provável que siga o modelo já adotado pelo ZIP há alguns anos. Versões voltadas para o mercado corporativo até expandem os formatos suportados, mas nenhuma oferecia suporte ao RAR, por se tratar de um formato proprietário.\nA ferramenta do Windows para compactação de arquivos é bem básica: você seleciona os arquivos e ela comprime para ocupar menos espaço no HD. Não há recursos de proteger com senhas, separar em vários arquivos ou reparar conteúdos danificados.\nEntão, talvez o WinRAR ainda consiga sobreviver se fortalecer os extras ausentes do Windows. Embora seja um software pago, ele permite que o usuário estenda eternamente a licença de 40 dias, o que obviamente desestimula a compra. Recentemente, o influenciador Felipe Neto comprou uma licença do programa para dar exemplo e mostrar como funciona a versão paga."
+        },
+        {
+            "subTitle": "O WinRAR vai morrer?",
+            "text": "O WinRAR tem mais de meio bilhão de usuários no mundo inteiro, sendo considerada a ferramenta de compactação mais popular do mundo. Sua funcionalidade vai além do formato proprietário para “deszipar” também outros mais antigos, como GZ, ARJ e até ISO.\nVale lembrar que o WinRAR causou uma grande revolução quando chegou ao mercado graças ao seu alto poder de compactação de arquivos e criptografia de senha. Nem mesmo a rivalidade com o formato de código aberto 7Z (7-ZIP) foi páreo para o amado formato.\nO suporte nativo para RAR deve chegar ao Windows 11 em algum momento do segundo semestre, mas ainda não há uma data definida. Antes, os testadores cadastrados no programa Windows Insider devem receber uma prévia."
         }
     ]
 }
