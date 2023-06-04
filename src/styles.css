@@ -13,3 +13,7 @@
 app-home{
     display: flex;
 }
+
+span{
+    font-size: small;
+}

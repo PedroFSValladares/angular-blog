@@ -8,17 +8,18 @@ import News from '../../../assets/data/news.json';
 })
 export class BigCardComponent implements OnInit{
   title:string = News.title
-  summary:string = this.makeSummary()
+  summary:string = this.buildSummary()
   topic:string = News.topic
   views:number = 2000
-  publishedAt!: Date;
-  imageUrl:string = 'News.imageUrl'
+  publishedAt: string = News.publishDate ;
+  imageUrl:string = News.imageUrl
 
   ngOnInit(): void {
       
   }
-  makeSummary():string{
+  buildSummary():string{
     let fullText = News.text[0].text.split(' ')
-    return fullText.slice(0, 20).join(' ').concat('...')
+    return fullText.slice(0, 30).join(' ').concat('...')
   }
+
 }

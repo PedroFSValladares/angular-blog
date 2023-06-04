@@ -3,13 +3,13 @@
     grid-template-columns: auto;
     width: 100%;
 }
-@media(min-width: 500px){
+@media(min-width: 640px){
     .news-container{
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: 60% 40%;
     }
 }
-@media(min-width: 800px){
+@media(min-width: 850px){
     .news-container{
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: 40% 30% 30%;
     }
 }

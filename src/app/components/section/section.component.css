@@ -4,4 +4,8 @@ section{
 .section-header{
     display: flex;
     justify-content: space-between;
+    padding: 1rem 0;
+}
+.section-header > a{
+    font-size: small;
 }

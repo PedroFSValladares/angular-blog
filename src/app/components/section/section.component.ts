@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./section.component.css']
 })
 export class SectionComponent {
-
+  type:string = 'primary'
 }
