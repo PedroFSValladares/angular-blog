@@ -1,10 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import News from '../../../assets/data/news.json';
 
 @Component({
-  selector: 'app-big-card',
-  templateUrl: './big-card.component.html',
-  styleUrls: ['./big-card.component.css']
+  selector: 'app-article-card',
+  templateUrl: './article-card.component.html',
+  styleUrls: ['./article-card.component.css']
 })
 export class BigCardComponent implements OnInit{
   title:string = News.title
@@ -13,6 +13,8 @@ export class BigCardComponent implements OnInit{
   views:number = 2000
   publishedAt: string = News.publishDate ;
   imageUrl:string = News.imageUrl
+  audioFile:any
+  @Input() type:string = 'big'
 
   ngOnInit(): void {
       

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClient, HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -7,11 +8,10 @@ import { HomeComponent } from './pages/home/home.component';
 import { ArticleComponent } from './pages/article/article.component';
 import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
 import { SectionComponent } from './components/section/section.component';
-import { BigCardComponent } from './components/big-card/big-card.component';
-import { MediumCardComponent } from './components/medium-card/medium-card.component';
-import { SmallCardComponent } from './components/small-card/small-card.component';
-import { AudioCardComponent } from './components/audio-card/audio-card.component';
+import { BigCardComponent } from './components/article-card/article-card.component';
 import { ArticleContentComponent } from './components/article-content/article-content.component';
+import { HeaderComponent } from './components/article-card/header/header.component';
+import { FooterComponent } from './components/article-card/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,14 +21,14 @@ import { ArticleContentComponent } from './components/article-content/article-co
     MenuBarComponent,
     SectionComponent,
     BigCardComponent,
-    MediumCardComponent,
-    SmallCardComponent,
-    AudioCardComponent,
-    ArticleContentComponent
+    ArticleContentComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

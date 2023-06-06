@@ -1,0 +1,16 @@
+<article [ngClass]="type === 'big' ? 'big-article': ''">
+    <img src="{{imageUrl}}" alt="" srcset="">
+    <div [ngClass]="type === 'big' ? 'article-big-content': ''" class="article-content">
+        <app-card-header
+            [topic]="topic"
+            [publishDate]="publishedAt"
+        ></app-card-header>
+        <div class="article-text">
+            <h1>{{title}}</h1>
+            <p>{{summary}}</p>
+        </div>
+        <app-card-footer
+            [views]="views"
+        ></app-card-footer>
+    </div>
+</article>

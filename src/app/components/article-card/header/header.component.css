@@ -1,0 +1,14 @@
+.article-header{
+    display: flex;
+    margin: 1rem 0;
+}
+.article-header span {
+    font-size: x-small;
+}
+.article-topic{
+    color: #606CD5;
+    margin-right: 10px;
+}
+.article-publish-date{
+    color: #9A9A9A;
+}
