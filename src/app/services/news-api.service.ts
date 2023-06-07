@@ -6,18 +6,20 @@ import { Source } from '../models/source';
 
 class ApiUrl{
   baseUrl:string = environment.apiBaseUrl
-  params:{key:string, value:string}[] = []
+  params:{key:string, value:string|number}[] = []
 
-  addParam(newKey:string, newValue:string){
+  addParam(newKey:string, newValue:string|number){
     this.params.push({key: newKey, value: newValue})
   }
 
   getEndpoint(endpoint:string):string{
     this.addParam('apiKey', environment.apiKey)
     
-    let final = this.params.map((param) =>  `${param.key}=${param.value}`).join('&')
+    let urlParams = this.params.map((param) => `${param.key}=${param.value}`).join('&')
+    let url = `${this.baseUrl}${endpoint}?${urlParams}`
+    this.params = this.params.filter((param) => param.key === 'apiKey')
 
-    return `${this.baseUrl}${endpoint}?${final}`
+    return url;
   }
 }
 
@@ -25,22 +27,26 @@ class ApiUrl{
   providedIn: 'root'
 })
 export class NewsApiService {
-  baseUrl:string = ''
+  urlBuilder:ApiUrl = new ApiUrl()
   apiKey:string = environment.apiKey
   country:string = 'pt'
   pageSize:number = 50
   
-  constructor(private http:HttpClient) {
-    this.baseUrl = environment.apiBaseUrl
-  }
+  constructor(private http:HttpClient) { }
 
   getTopHeadLinesByCategory(category:string):Observable<any>{
-    let result = this.http.get<any>(`${this.baseUrl}top-headlines?sources=globo&pageSize=${this.pageSize}&apiKey=${this.apiKey}`)
+    this.urlBuilder.addParam('pageSize', this.pageSize)
+    if(category != null){
+      this.urlBuilder.addParam('category', category)
+    }
+    let result = this.http.get<any>(this.urlBuilder.getEndpoint('top-headlines'))
     return result
   }
 
   getSources(topic:string):Observable<Source>{
-    let result = this.http.get<Source>(`${this.baseUrl}top-headlines/sources?language=pt&country=br&apiKey=${this.apiKey}`)
+    this.urlBuilder.addParam('language', 'pt')
+    this.urlBuilder.addParam('country', 'br')
+    let result = this.http.get<Source>(this.urlBuilder.getEndpoint('top-headlines/sources'))
     return result
   }
 }

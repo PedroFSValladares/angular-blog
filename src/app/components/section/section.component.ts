@@ -8,7 +8,6 @@ import { NewsApiService } from 'src/app/services/news-api.service';
   styleUrls: ['./section.component.css']
 })
 export class SectionComponent implements OnInit{
-  @Input() topic:string = 'general'
   title:string = ''
   news:any = [
     {new: news, display: 'medium'},
@@ -20,13 +19,5 @@ export class SectionComponent implements OnInit{
   ngOnInit(): void {
     /*
     */
-   this.newsApi.getTopHeadLinesByCategory(this.topic).subscribe({
-     next: (response) => console.log(response),
-     error: (err) => console.log(err)
-   })
-    this.newsApi.getSources(this.topic).subscribe({
-      next: (response) => console.log(response),
-      error: (err) => console.log(err)
-    })
   }
 }
