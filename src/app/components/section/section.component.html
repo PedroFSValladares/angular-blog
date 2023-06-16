@@ -4,8 +4,26 @@
         <a>Veja Mais</a>
     </div>
     <div class="news">
-        <app-article-card
-            *ngFor="let n of news"
-        ></app-article-card>
+        <ng-template [ngIf]="!middleSection">
+            <app-article-card
+                *ngFor="let n of news"
+                [title]="n.title"
+                [imageUrl]="n.image_url"
+                [summary]="n.description"
+                [publishedAt]="n.pubDate"
+                [topic]="n.category[0]"
+                [articleCardType]="articleType"
+            ></app-article-card>
+        </ng-template>
+        <ng-template [ngIf]="middleSection">
+            <app-small-article
+                *ngFor="let n of news"
+                [title]="n.title"
+                [imageUrl]="n.image_url"
+                [topic]="n.category[0]"
+                [publishDate]="n.pubDate"
+            ></app-small-article>
+        </ng-template>
     </div>
+    <hr/>
 </section>

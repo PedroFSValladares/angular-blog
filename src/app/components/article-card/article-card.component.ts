@@ -6,22 +6,17 @@ import News from '../../../assets/data/news.json';
   templateUrl: './article-card.component.html',
   styleUrls: ['./article-card.component.css']
 })
-export class BigCardComponent implements OnInit{
-  title:string = News.title
-  summary:string = this.buildSummary()
-  topic:string = News.topic
-  views:number = 2000
-  publishedAt: string = News.publishDate ;
-  imageUrl:string = News.imageUrl
-  audioFile:any
-  @Input() type:string = 'big'
+export class ArticleCardComponent implements OnInit{
+  @Input() title:string = News.title
+  @Input() summary:string = News.description
+  @Input() topic:string = News.category[0]
+  @Input() views:number = 2000
+  @Input() publishedAt: string = News.pubDate
+  @Input() imageUrl:string = News.image_url
+  @Input() videoUrl:string = ''
+  @Input() articleCardType:string = 'big-article'
 
   ngOnInit(): void {
       
   }
-  buildSummary():string{
-    let fullText = News.text[0].text.split(' ')
-    return fullText.slice(0, 30).join(' ').concat('...')
-  }
-
 }

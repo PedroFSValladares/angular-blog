@@ -1,0 +1,9 @@
+<article>
+    <figure *ngIf="imageUrl">
+        <img src="{{imageUrl}}" alt="" srcset="">
+    </figure>
+    <div class="content">
+        <h3>{{title}}</h3>
+        <app-article-header [topic]="topic" [publishDate]="publishDate"></app-article-header>
+    </div>
+</article>

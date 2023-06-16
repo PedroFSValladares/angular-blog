@@ -1,12 +1,24 @@
 <app-menu-bar></app-menu-bar>
 <div class="news-container">
     <div class="primary-news">
-        <app-section [title]="'Geral'"></app-section>
+        <app-section [topic]="mainSection.category" [title]="mainSection.title" [news]="mainSection.news" [articleType]="'big-article'"></app-section>
     </div>
     <div class="other-news">
-        <app-section></app-section>
+        <app-section
+            *ngFor="let section of categorySections"
+            [title]="section.title"
+            [topic]="section.category"
+            [news]="section.news"
+            [articleType]="'medium-article'"
+            [middleSection]="true"    
+        ></app-section>
     </div>
     <div class="popular-posts">
-        <app-section [title]="'Outras Notícias'"></app-section>
+        <app-section
+            [topic]="otherSection.category"
+            [articleType]="'medium-article'"
+            [title]="'Outras Notícias'"
+            [news]="otherSection.news"
+        ></app-section>
     </div>
 </div>

@@ -14,10 +14,10 @@ export class MenuBarComponent {
   menuButtons:MenuButton[] = [
     {route: '/', iconName: 'home'},
     {route: 'heath', iconName: 'ecg_heart'},
-    {route: 'education', iconName: 'library_books'},
+    {route: 'politcs', iconName: 'library_books'},
     {route: 'sports', iconName: 'sports_basketball'},
     {route: 'travel', iconName: 'room_service'},
-    {route: 'transit', iconName: 'directions_car'},
+    {route: 'business', iconName: 'work'},
     {route: 'favorites', iconName: 'bookmark'},
     {route: 'search', iconName: 'search'},
   ]

@@ -1,7 +1,7 @@
 article{
     display: flex;
     justify-content: center;
-    margin-bottom: 300px;
+    margin-bottom: 1rem;
 }
 .article-content{
     border-radius: 1rem;
@@ -29,13 +29,33 @@ img{
 
 .big-article{
     position: relative;
+    margin-bottom: 300px;
 }
-.article-big-content{
+.big-article-content{
     position: absolute;
     background-color: white;
     top: 65%;
 }
 
+.small-article{
+    
+}
+.small-article img{
+    width: 20%;
+}
+.small-article-content{
+
+}
+
+.medium-article{
+    flex-direction: column;
+}
+.medium-article .article-text h1{
+    font-size: x-large;
+}
+.medium-article-content{
+    padding: 0;
+}
 
 @media(min-width: 600px){
     .article-text > h1{

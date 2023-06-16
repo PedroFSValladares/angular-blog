@@ -2,7 +2,14 @@
     display: grid;
     grid-template-columns: auto;
     width: 100%;
+    margin-top: 1rem;
 }
+
+.other-news{
+    border-left: 2px solid #e9e9e9;
+    border-right: 2px solid #e9e9e9;
+}
+
 @media(min-width: 640px){
     .news-container{
         grid-template-columns: 60% 40%;

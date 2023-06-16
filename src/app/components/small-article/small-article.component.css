@@ -1,0 +1,11 @@
+article{
+    display: flex;
+}
+img{
+    width: 100%;
+    border-radius: 1rem;
+}
+figure{
+    width: 60%;
+    padding: 1rem;
+}
